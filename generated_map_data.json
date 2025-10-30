@@ -1,0 +1,508 @@
+{
+  "data": [
+    {
+      "lat": [
+        39.92
+      ],
+      "lon": [
+        -105.086
+      ],
+      "locationmode": "USA-states",
+      "marker": {
+        "color": "green",
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10
+      },
+      "mode": "markers+text",
+      "name": "MST",
+      "showlegend": false,
+      "text": [
+        "Matt Soltis"
+      ],
+      "textposition": "bottom center",
+      "textfont": {
+        "size": 12,
+        "color": "black"
+      },
+      "hovertext": [
+        "Core Team Lead<br>Broomfield, CO"
+      ],
+      "hovertemplate": "%{hovertext}<extra></extra>",
+      "type": "scattergeo"
+    },
+    {
+      "lat": [
+        39.103
+      ],
+      "lon": [
+        -84.512
+      ],
+      "locationmode": "USA-states",
+      "marker": {
+        "color": "red",
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10
+      },
+      "mode": "markers+text",
+      "name": "EST",
+      "showlegend": false,
+      "text": [
+        "Meghan Batt"
+      ],
+      "textposition": "bottom center",
+      "textfont": {
+        "size": 12,
+        "color": "black"
+      },
+      "hovertext": [
+        "Program Manager<br>Cincinnati, OH"
+      ],
+      "hovertemplate": "%{hovertext}<extra></extra>",
+      "type": "scattergeo"
+    },
+    {
+      "lat": [
+        43.157
+      ],
+      "lon": [
+        -77.615
+      ],
+      "locationmode": "USA-states",
+      "marker": {
+        "color": "red",
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10
+      },
+      "mode": "markers+text",
+      "name": "EST",
+      "showlegend": false,
+      "text": [
+        "Brian Blonowicz"
+      ],
+      "textposition": "bottom center",
+      "textfont": {
+        "size": 12,
+        "color": "black"
+      },
+      "hovertext": [
+        "R&D Core Team Member<br>Rochester, NY"
+      ],
+      "hovertemplate": "%{hovertext}<extra></extra>",
+      "type": "scattergeo"
+    },
+    {
+      "lat": [
+        38.982
+      ],
+      "lon": [
+        -94.67
+      ],
+      "locationmode": "USA-states",
+      "marker": {
+        "color": "orange",
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10
+      },
+      "mode": "markers+text",
+      "name": "CST",
+      "showlegend": false,
+      "text": [
+        "Joel Norton<br>Kris Klindworth"
+      ],
+      "textposition": "bottom center",
+      "textfont": {
+        "size": 12,
+        "color": "black"
+      },
+      "hovertext": [
+        "Pyxis 2.0 Product Mgr<br>Pyxis 2.0 Software Lead<br>Overland Park, KS"
+      ],
+      "hovertemplate": "%{hovertext}<extra></extra>",
+      "type": "scattergeo"
+    },
+    {
+      "lat": [
+        36.163
+      ],
+      "lon": [
+        -86.782
+      ],
+      "locationmode": "USA-states",
+      "marker": {
+        "color": "orange",
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10
+      },
+      "mode": "markers+text",
+      "name": "CST",
+      "showlegend": false,
+      "text": [
+        "Andrew McShane"
+      ],
+      "textposition": "bottom center",
+      "textfont": {
+        "size": 12,
+        "color": "black"
+      },
+      "hovertext": [
+        "BD Incada Product Mgr<br>Nashville, TN"
+      ],
+      "hovertemplate": "%{hovertext}<extra></extra>",
+      "type": "scattergeo"
+    },
+    {
+      "lat": [
+        32.716
+      ],
+      "lon": [
+        -117.161
+      ],
+      "locationmode": "USA-states",
+      "marker": {
+        "color": "blue",
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10
+      },
+      "mode": "markers+text",
+      "name": "PST",
+      "showlegend": false,
+      "text": [
+        "Daniel Feitelberg<br>Maryam Amini"
+      ],
+      "textposition": "bottom center",
+      "textfont": {
+        "size": 12,
+        "color": "black"
+      },
+      "hovertext": [
+        "Commercial Lead<br>Regulatory Lead<br>San Diego, CA"
+      ],
+      "hovertemplate": "%{hovertext}<extra></extra>",
+      "type": "scattergeo"
+    },
+    {
+      "lat": [
+        35.845
+      ],
+      "lon": [
+        -86.39
+      ],
+      "locationmode": "USA-states",
+      "marker": {
+        "color": "orange",
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10
+      },
+      "mode": "markers+text",
+      "name": "CST",
+      "showlegend": false,
+      "text": [
+        "Chrisine Zeringue"
+      ],
+      "textposition": "bottom center",
+      "textfont": {
+        "size": 12,
+        "color": "black"
+      },
+      "hovertext": [
+        "SDS Lead<br>Murfreesboro, TN"
+      ],
+      "hovertemplate": "%{hovertext}<extra></extra>",
+      "type": "scattergeo"
+    },
+    {
+      "lat": [
+        41.878
+      ],
+      "lon": [
+        -87.63
+      ],
+      "locationmode": "USA-states",
+      "marker": {
+        "color": "orange",
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10
+      },
+      "mode": "markers+text",
+      "name": "CST",
+      "showlegend": false,
+      "text": [
+        "Michael Garretson"
+      ],
+      "textposition": "bottom center",
+      "textfont": {
+        "size": 12,
+        "color": "black"
+      },
+      "hovertext": [
+        "Quality Lead<br>Chicago, IL"
+      ],
+      "hovertemplate": "%{hovertext}<extra></extra>",
+      "type": "scattergeo"
+    },
+    {
+      "lat": [
+        38.907
+      ],
+      "lon": [
+        -77.037
+      ],
+      "locationmode": "USA-states",
+      "marker": {
+        "color": "red",
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10
+      },
+      "mode": "markers+text",
+      "name": "EST",
+      "showlegend": false,
+      "text": [
+        "JJ Johnson"
+      ],
+      "textposition": "bottom center",
+      "textfont": {
+        "size": 12,
+        "color": "black"
+      },
+      "hovertext": [
+        "Med Affairs Lead<br>Washington DC"
+      ],
+      "hovertemplate": "%{hovertext}<extra></extra>",
+      "type": "scattergeo"
+    },
+    {
+      "lat": [
+        47.606
+      ],
+      "lon": [
+        -122.332
+      ],
+      "locationmode": "USA-states",
+      "marker": {
+        "color": "blue",
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10
+      },
+      "mode": "markers+text",
+      "name": "PST",
+      "showlegend": false,
+      "text": [
+        "Manish Khatiwada"
+      ],
+      "textposition": "bottom center",
+      "textfont": {
+        "size": 12,
+        "color": "black"
+      },
+      "hovertext": [
+        "Risk Assessment Lead<br>Seattle, WA"
+      ],
+      "hovertemplate": "%{hovertext}<extra></extra>",
+      "type": "scattergeo"
+    },
+    {
+      "lat": [
+        33.749
+      ],
+      "lon": [
+        -84.388
+      ],
+      "locationmode": "USA-states",
+      "marker": {
+        "color": "red",
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10
+      },
+      "mode": "markers+text",
+      "name": "EST",
+      "showlegend": false,
+      "text": [
+        "Sameer Joshi"
+      ],
+      "textposition": "bottom center",
+      "textfont": {
+        "size": 12,
+        "color": "black"
+      },
+      "hovertext": [
+        "Cybersecurity Lead<br>Atlanta, GA"
+      ],
+      "hovertemplate": "%{hovertext}<extra></extra>",
+      "type": "scattergeo"
+    },
+    {
+      "lat": [
+        43.0389
+      ],
+      "lon": [
+        -87.9065
+      ],
+      "locationmode": "USA-states",
+      "marker": {
+        "color": "orange",
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10
+      },
+      "mode": "markers+text",
+      "name": "CST",
+      "showlegend": false,
+      "text": [
+        "Balaji Raman"
+      ],
+      "textposition": "bottom center",
+      "textfont": {
+        "size": 12,
+        "color": "black"
+      },
+      "hovertext": [
+        "BD Incada Software Lead<br>Milwaukee, WI"
+      ],
+      "hovertemplate": "%{hovertext}<extra></extra>",
+      "type": "scattergeo"
+    },
+    {
+      "lat": [
+        null
+      ],
+      "lon": [
+        null
+      ],
+      "marker": {
+        "color": "green",
+        "size": 10,
+        "line": {
+          "color": "black",
+          "width": 1
+        }
+      },
+      "mode": "markers",
+      "name": "MST",
+      "type": "scattergeo",
+      "showlegend": true
+    },
+    {
+      "lat": [
+        null
+      ],
+      "lon": [
+        null
+      ],
+      "marker": {
+        "color": "red",
+        "size": 10,
+        "line": {
+          "color": "black",
+          "width": 1
+        }
+      },
+      "mode": "markers",
+      "name": "EST",
+      "type": "scattergeo",
+      "showlegend": true
+    },
+    {
+      "lat": [
+        null
+      ],
+      "lon": [
+        null
+      ],
+      "marker": {
+        "color": "orange",
+        "size": 10,
+        "line": {
+          "color": "black",
+          "width": 1
+        }
+      },
+      "mode": "markers",
+      "name": "CST",
+      "type": "scattergeo",
+      "showlegend": true
+    },
+    {
+      "lat": [
+        null
+      ],
+      "lon": [
+        null
+      ],
+      "marker": {
+        "color": "blue",
+        "size": 10,
+        "line": {
+          "color": "black",
+          "width": 1
+        }
+      },
+      "mode": "markers",
+      "name": "PST",
+      "type": "scattergeo",
+      "showlegend": true
+    }
+  ],
+  "layout": {
+    "geo": {
+      "scope": "usa",
+      "projection": {
+        "type": "albers usa"
+      },
+      "showland": true,
+      "landcolor": "lightgray",
+      "subunitcolor": "white",
+      "countrycolor": "white",
+      "showlakes": true,
+      "lakecolor": "lightblue"
+    },
+    "legend": {
+      "title": {
+        "text": "Time Zones"
+      }
+    },
+    "title": {
+      "text": "Core Team Member Locations by Time Zone"
+    },
+    "margin": {
+      "r": 0,
+      "t": 50,
+      "l": 0,
+      "b": 0
+    }
+  }
+}
