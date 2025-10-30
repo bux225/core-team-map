@@ -1,41 +1,58 @@
 import csv
 import json
-import random
-
-# Set a seed for reproducible jittering
-random.seed(42)
-
-def jitter_coordinate(coord, jitter_amount=0.02):
-    """Add small random offset to coordinate to avoid overlapping markers"""
-    return coord + random.uniform(-jitter_amount, jitter_amount)
+from collections import defaultdict
 
 # Read the CSV file
 with open('cities.csv', 'r', encoding='utf-8-sig') as file:
     reader = csv.DictReader(file)
     data = list(reader)
 
-# Generate map data with unique markers for each person
+# Group people by city and time zone
+city_groups = defaultdict(lambda: {
+    'people': [], 
+    'lat': None, 
+    'lon': None, 
+    'timezone': None, 
+    'color': None,
+    'city': None
+})
+
+for row in data:
+    city_key = f"{row['City']},{row['Time Zone']}"
+    city_groups[city_key]['people'].append({
+        'name': row['Name'],
+        'role': row['Role']
+    })
+    city_groups[city_key]['lat'] = float(row['Latitude'])
+    city_groups[city_key]['lon'] = float(row['Longitude'])
+    city_groups[city_key]['timezone'] = row['Time Zone']
+    city_groups[city_key]['color'] = row['Color']
+    city_groups[city_key]['city'] = row['City']
+
+# Generate map data
 map_data = []
 legend_data = []
 
 # Track which time zones we've seen for legend
 seen_timezones = set()
 
-for row in data:
-    # Jitter the coordinates to avoid overlapping markers
-    jittered_lat = jitter_coordinate(float(row['Latitude']))
-    jittered_lon = jitter_coordinate(float(row['Longitude']))
+for city_info in city_groups.values():
+    # Create text for display (names separated by <br>)
+    display_text = '<br>'.join([person['name'] for person in city_info['people']])
     
-    # Create hover text with person's info
-    hover_text = f"{row['Name']}<br>{row['Role']}<br>{row['City']}"
+    # Create hover text (just role for each person)
+    hover_lines = []
+    for person in city_info['people']:
+        hover_lines.append(person['role'])
+    hover_text = '<br>'.join(hover_lines) + f"<br>{city_info['city']}"
     
-    # Add individual marker for this person
+    # Add main data point
     map_data.append({
-        "lat": [jittered_lat],
-        "lon": [jittered_lon],
+        "lat": [city_info['lat']],
+        "lon": [city_info['lon']],
         "locationmode": "USA-states",
         "marker": {
-            "color": row['Color'],
+            "color": city_info['color'],
             "line": {
                 "color": "black",
                 "width": 1
@@ -43,12 +60,12 @@ for row in data:
             "size": 10
         },
         "mode": "markers+text",
-        "name": row['Time Zone'],
+        "name": city_info['timezone'],
         "showlegend": False,
-        "text": [row['Name']],
+        "text": [display_text],
         "textposition": "bottom center",
         "textfont": {
-            "size": 10,
+            "size": 12,
             "color": "black"
         },
         "hovertext": [hover_text],
@@ -57,12 +74,12 @@ for row in data:
     })
     
     # Add legend entry if we haven't seen this timezone yet
-    if row['Time Zone'] not in seen_timezones:
+    if city_info['timezone'] not in seen_timezones:
         legend_data.append({
             "lat": [None],
             "lon": [None],
             "marker": {
-                "color": row['Color'],
+                "color": city_info['color'],
                 "size": 10,
                 "line": {
                     "color": "black",
@@ -70,11 +87,11 @@ for row in data:
                 }
             },
             "mode": "markers",
-            "name": row['Time Zone'],
+            "name": city_info['timezone'],
             "type": "scattergeo",
             "showlegend": True
         })
-        seen_timezones.add(row['Time Zone'])
+        seen_timezones.add(city_info['timezone'])
 
 # Combine all data
 all_data = map_data + legend_data
@@ -116,6 +133,6 @@ map_config = {
 with open('generated_map_data.json', 'w') as f:
     json.dump(map_config, f, indent=2)
 
-print("Generated map data with unique markers for each person!")
-print(f"Created {len(data)} individual markers")
-print(f"Found {len(seen_timezones)} unique time zones")
+print("Generated map data from CSV!")
+print(f"Found {len(city_groups)} unique city/timezone combinations")
+print(f"Total team members: {len(data)}")

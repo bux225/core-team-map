@@ -4,7 +4,7 @@ This project automatically generates an interactive map of core team member loca
 
 ## Files Overview
 
-- `cities.csv` - Source data with team member information
+- `cities.csv` - Source data with team member information.  MUST HAVE unique lat/lon's.  Jitter folks living in same city
 - `generate_map_data.py` - Python script to process CSV and generate JSON data
 - `update_html.py` - Python script to update the HTML file with new data
 - `team-map-from-csv.html` - Final interactive map (self-contained HTML file)
